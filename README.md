@@ -13,7 +13,7 @@
 ### 📈 核心價值與 UX 突破
 
 * **情感具象化與留存 (Retention)：** 獨創 54 項多維度「靈魂里程碑」（涵蓋時間、頻率、節慶彩蛋），結合虛擬經濟系統（旅幣與靈魂雜貨舖），大幅降低傳統日記產品的流失率 (Churn Rate)。
-* **零摩擦體驗 (Zero-Friction UX)：** 實作本地端快取機制 (`cached_network_image` & `shared_preferences`)，降低 API 重複請求成本，圖片加載速度提升 80% 以上。
+* **零摩擦體驗 (Zero-Friction UX)：** 實作本地端快取機制 (`cached_network_image` & `shared_preferences`)，降低 API 重複請求成本，圖片加載速度提升。
 * **高轉換率架構 (High Conversion)：** 支援「無痛訪客模式」，並透過雲端腳本實現訪客數據到正式帳號的毫秒級無縫遷移，確保使用者體驗 Aha Moment 後的極致轉換。
 
 ---
