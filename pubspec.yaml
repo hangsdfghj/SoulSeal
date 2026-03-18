@@ -1,0 +1,72 @@
+name: soullog_app
+description: "SoulSeal - AI 療癒日記與蠟章封存"
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- 核心套件 ---
+  http: ^1.2.0
+  intl: ^0.19.0
+  shared_preferences: ^2.2.2
+  
+  # --- 後端與登入 ---
+  supabase_flutter: ^2.5.0
+  google_sign_in: ^6.2.1
+  sign_in_with_apple: ^6.1.0
+
+  # --- 視覺與字體 ---
+  cached_network_image: ^3.3.1
+  google_fonts: ^6.2.1
+  cupertino_icons: ^1.0.6
+
+  # --- 互動與多媒體 ---
+  audioplayers: ^6.0.0
+  
+  # --- 通知系統 (補回這兩行！) ---
+  flutter_local_notifications: ^17.0.0
+  timezone: ^0.9.2
+
+  # --- 分享功能 ---
+  screenshot: ^3.0.0
+  share_plus: ^9.0.0
+  path_provider: ^2.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.0
+
+# --- Flutter 設定 ---
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/sounds/
+    - assets/icon/
+
+# --- App Icon 設定 ---
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+  min_sdk_android: 21
+  adaptive_icon_background: "#FDFBF7"
+  adaptive_icon_foreground: "assets/icon/icon.png"
+
+# --- 啟動畫面設定 ---
+flutter_native_splash:
+  color: "#FDFBF7"
+  image: "assets/icon/icon.png"
+  android_12:
+    image: "assets/icon/icon.png"
+    color: "#FDFBF7"
+  ios: true
+  android: true
